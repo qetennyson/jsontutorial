@@ -39,6 +39,15 @@ body {
 }
 
 /* Info Panels */
+.row {
+    padding-bottom: 3em; 
+   
+}
+
+a.btn.btn-primary {
+    margin-top: 30px;
+    margin-left: 46px;
+}
 
 
 /* Custom page footer */

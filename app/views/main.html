@@ -7,11 +7,16 @@
   <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
-<div class="panel-group" ng-controller="MainCtrl" ng-repeat="tutorial in myData">
-  <div class="panel panel-default">
-    <h3>{{ tutorial.title }}</h3>
-    <h4> {{ tutorial.author }}</h4>
-    <img src="{{ tutorial.image }}"</img>
-    <a href="{{ tutorial.url }}" class="btn btn-primary" role="button"> Learn More </a>
-  </div>
+<div class="container">
+    <div class="row" ng-controller="MainCtrl" ng-repeat="tutorial in myData">     
+        <div class="col-sm-4">
+           <img class="img-thumbnail" src="{{ tutorial.image }}">
+           <h4> {{ tutorial.author }}</h4>      
+        </div>
+        
+        <div class="col-sm-8">
+            <h3>{{ tutorial.title }}</h3>
+            <a href="{{ tutorial.url }}" class="btn btn-primary" role="button"> Learn More </a>
+        </div>
+    </div>
 </div>
