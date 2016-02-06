@@ -8,10 +8,11 @@
  * Controller of the jsontutorialApp
  */
 angular.module('jsontutorialApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', [ '$http', '$scope', function($http, $scope){
+      var items = this;
+      items.tutorials = [];
+      
+      $http.get('tutorials.json').then(function(resp){
+          $scope.myData = resp.data.tutorials;
+    });   
+}]);

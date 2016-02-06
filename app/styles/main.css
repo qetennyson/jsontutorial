@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:600);
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -17,6 +19,12 @@ body {
   padding-right: 15px;
 }
 
+.navbar-brand {
+    font-family: Raleway;
+}
+
+
+
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -29,6 +37,9 @@ body {
   line-height: 40px;
   padding-bottom: 19px;
 }
+
+/* Info Panels */
+
 
 /* Custom page footer */
 .footer {
