@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:600);
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -20,11 +20,18 @@ body {
 }
 
 .navbar-brand {
-    font-family: Raleway;
+    font-family: Montserrat;
+    color: #222222;
 }
 
+.navbar li {
+    font-family: Raleway;
+    color: black;
+}
 
-
+.navbar.navbar-default {
+    background-color: white;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -38,10 +45,14 @@ body {
   padding-bottom: 19px;
 }
 
+/* Search Div */
+.form-inline {
+    padding-bottom: 20px;
+}
+
 /* Info Panels */
-.row {
-    padding-bottom: 3em; 
-   
+.panel {
+    font-family: Raleway;
 }
 
 a.btn.btn-primary {
@@ -49,6 +60,14 @@ a.btn.btn-primary {
     margin-left: 46px;
 }
 
+p.ng-binding {
+    padding-left: 10px;
+}
+
+img.img-thumbnail {
+    max-height: 100px;
+    max-width: 100px;
+}
 
 /* Custom page footer */
 .footer {
@@ -65,10 +84,26 @@ a.btn.btn-primary {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background-color: #689DC7;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-family: Raleway;
+  
 }
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
+}
+
+.jumbotron h1 {
+    padding-bottom: 20px;
+}
+
+.jumbotron img {
+    height: 160px;
+    width: 160px;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 /* Supporting marketing content */
