@@ -8,10 +8,9 @@
  * Controller of the jsontutorialApp
  */
 angular.module('jsontutorialApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('AboutCtrl', ['$scope','$location', function ($scope, $location) {
+        $scope.isActive = function (viewlocation) {
+            return viewlocation === $location.path();
+        };
     ];
   });

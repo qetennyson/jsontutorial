@@ -29,6 +29,11 @@ body {
     color: black;
 }
 
+.container.ng-scope {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
 .navbar.navbar-default {
     background-color: white;
 }
@@ -58,10 +63,6 @@ body {
 a.btn.btn-primary {
     margin-top: 30px;
     margin-left: 46px;
-}
-
-p.ng-binding {
-    padding-left: 10px;
 }
 
 img.img-thumbnail {
@@ -135,4 +136,12 @@ img.img-thumbnail {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+
+/* Minimal About CSS */
+
+.codecontainer {
+    width: 110%;
+
 }
