@@ -8,6 +8,7 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
+   
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
@@ -65,6 +66,21 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
+    },
+    
+    buildcontrol: {
+        options: {
+            dir: 'dist',
+            commit: true,
+            push: true,
+            message: 'Built by %sourcename% from commit %sourcecommit% on branch %sourcebranch%'
+        },
+        pages: {
+            options: {
+                remote: 'git@github.com:qetennyson/jsontutorial',
+                branch: 'gh-pages'
+            }
+        }
     },
 
     // The actual grunt server settings
@@ -480,4 +496,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  
+  grunt.loadNpmTasks('grunt-build-control');
 };
