@@ -68,21 +68,6 @@ module.exports = function (grunt) {
       }
     },
     
-    buildcontrol: {
-        options: {
-            dir: 'dist',
-            commit: true,
-            push: true,
-            message: 'Built by %sourcename% from commit %sourcecommit% on branch %sourcebranch%'
-        },
-        pages: {
-            options: {
-                remote: 'git@github.com:qetennyson/jsontutorial',
-                branch: 'gh-pages'
-            }
-        }
-    },
-
     // The actual grunt server settings
     connect: {
       options: {
@@ -497,5 +482,4 @@ module.exports = function (grunt) {
     'build'
   ]);
   
-  grunt.loadNpmTasks('grunt-build-control');
 };
