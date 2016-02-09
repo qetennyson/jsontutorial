@@ -12,5 +12,5 @@ angular.module('jsontutorialApp')
         $scope.isActive = function (viewlocation) {
             return viewlocation === $location.path();
         };
-    ];
-  });
+    
+  }]);
